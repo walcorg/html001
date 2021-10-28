@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOGIN Y REGISTRO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="cod-container">
+    <div class="form-header">
+            <img src="img/Logo.png" alt="Logo de WALCORG">
+            
+
+            
+        </div>
+      
+
+
+        <div class="form-content">
+            <form action="valida.php" method="POST">
+                <div class="form-title">
+                    <h3>ACCEDER</h3>
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="usuario"></label>
+                    <input type="usuario" class="form-input" placeholder="usuario" name="usuario" maxlength="200"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="password_01"></label>
+                    <input type="password_01" class="form-input" placeholder="password_01" name="password_01" maxlength="200"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Iniciar Sesión">
+                    <p>No tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                    <p> <a href="#" class="alt-form">Olvide mi contraseña</a></p>
+                </div>
+               
+            </form>
+        </div>
+
+        
+        <div class="form-content">
+        
+            <form action="registro.php" method="post">
+            
+
+            
+                <div class="form-title">
+                
+                    <h3>REGISTRARSE</h3>
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="usuario"> </label>
+                    <input type="usuario" class="form-input" placeholder="usuario" name="usuario" maxlength="30"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="email"> </label>
+                    <input type="email" class="form-input" placeholder="email" name="email" maxlength="30"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="password_01"> </label>
+                    <input type="password_01" class="form-input" placeholder="password_01" name="password_01" maxlength="15"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="password__02"> </label>
+                    <input type="password_02" class="form-input" placeholder="password_02" name="password_02" maxlength="15"/>
+                    
+                </div>
+
+                <div class="input-group">
+                    <label class="label" for="wallett"> </label>
+                    <input type="wallett" class="form-input" placeholder="wallett" name="wallett" maxlength="15"/>
+                    
+                </div>
+
+
+                <div class="input-group">
+                    <input type="submit" class="form-input" value="Registrate">
+                    <p>Ya tienes cuenta? <a href="#" class="alt-form">Ingresa aquí</a></p>
+                    <p>No tienes address wallett? <a href="https://www.myetherwallet.com/" class="alt-form">Ingresa aquí</a></p>
+                </div>
+               
+               
+            </form>
+        </div>
+    </div>
+
+    <script src="../jquery-3.3.1.min.js"></script>
+    <script src="../form.js"></script>
+</body>
+</html>
